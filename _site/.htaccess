@@ -1,0 +1,59 @@
+RewriteEngine On
+
+RewriteBase /
+
+# http://viralpatel.net/blogs/htaccess-directory-listing-enable-disable-allow-deny-prevent-htaccess-directory-listing/
+IndexIgnore *
+
+RewriteCond %{HTTP_HOST} ^manikrathee.com [NC]
+RewriteRule ^(.*)$ http://www.manikrathee.com/$1 [L,R=301]
+
+# HTTPS -- Not ready yet
+# RewriteEngine On
+# RewriteCond %{HTTPS} !on
+# RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+
+Redirect /subscribe http://www.manikrathee.com/weeklyreads
+Redirect /subscribe.html http://www.manikrathee.com/weeklyreads
+Redirect /sign-up http://www.manikrathee.com/weeklyreads
+Redirect /signup http://www.manikrathee.com/weeklyreads
+Redirect /weekly-reads http://www.manikrathee.com/weeklyreads
+
+Redirect /photography http://photos.manikrathee.com/
+Redirect /photos http://photos.manikrathee.com/
+Redirect /photographer http://photos.manikrathee.com/
+Redirect /exposure http://photos.manikrathee.com/
+
+Redirect /ios http://www.manikrathee.com/catalyst
+Redirect /iOS http://www.manikrathee.com/catalyst
+
+Redirect /shop https://marketplace.500px.com/manikrathee
+Redirect /500pxshop https://marketplace.500px.com/manikrathee
+Redirect /society6 https://society6.com/manikrathee
+
+Redirect /tumblr http://manikrathee.tumblr.com
+Redirect /twitter http://www.twitter.com/manikrathee
+Redirect /reading https://www.reading.am/ManikRathee/
+Redirect /instagram https://www.instagram.com/manikrathee/
+Redirect /linkedin http://www.linkedin.com/in/manikrathee
+Redirect /github http://www.github.com/manikrathee
+Redirect /gist http://gist.github.com/manikrathee
+Redirect /dribbble http://dribbble.com/manikrathee
+Redirect /foursquare http://foursquare.com/manikrathee
+Redirect /flickr http://www.flickr.com/photos/manikrathee
+Redirect /lastfm http://www.last.fm/user/mrathee
+# Redirect /rdio https://play.spotify.com/user/manikrathee # RIP
+Redirect /spotify https://play.spotify.com/user/manikrathee
+Redirect /vsco http://vsco.co/manikrathee/grid
+
+AddType application/x-font-woff woff
+AddType application/x-font-ttf ttf
+AddType application/vnd.ms-fontobject eot
+AddType image/svg+xml svg
+AddType 'text/html; charset=iso-8859-15' html
+
+# BEGIN GZIP
+<ifmodule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript image/svg+xml
+</ifmodule>
+# END GZIP

@@ -1,0 +1,68 @@
+// Variables
+
+  // Color
+  $white: #fff;
+  $off-white: #F7F7F7;
+  $medium-grey: #A2A2A2;
+  $light-grey: #EFF0F0;
+  $grey: #9E9E9E;
+  $dark-grey: #505050;
+  $black: #000;
+
+  $invert-body: #1f1f1f;
+  $invert-container: #2b2b2b;
+  $invert-copy: #c7c7c7;
+  $invert-border: 2px solid rgba(255,255,255,0.2);
+
+  $peak-color: #364E6B;
+
+  $highlight-mint: #82e17c;
+  $highlight-blue: #4cc9f9;
+  $highlight-orange: #daa838;
+  $highlight-neon-yellow: #b9ff47;
+
+  // Util Color
+  $copy: $dark-grey;
+
+  $border: 2px solid rgba(0,0,0,0.2);
+  $border-radius: 4px;
+
+  $timing: 0.35s;
+  $easing: ease-in-out;
+  $custom-easing: cubic-bezier(.3, 0, 0, 1.3);
+  $transition: #{$timing} #{$easing};
+  $transition-custom: #{$timing} #{$custom-easing};
+
+
+  $shadow: 0 50px 65px 5px rgba(0, 0, 0, 0.1);
+  $shadow-bottom-left: -30px 40px 65px 5px rgba(0, 0, 0, 0.1);
+  $shadow-bottom-right: 30px 40px 65px 5px rgba(0, 0, 0, 0.1);
+  $shadow-bottom-far-right: 5rem 5rem 65px 5px rgba(0, 0, 0, 0.05);
+  $shadowTransition: 1.25s cubic-bezier(0.19, 1, 0.22, 1);
+
+
+
+
+  // Typography
+  $sans: "Source Sans Pro", Helvetica, "Helvetica Neue", Arial, sans-serif;
+  $serif: "Source Serif Pro", "Centaur", "Centaur MT", "Stempel Garamond", "Adobe Garamond Pro", Georgia, serif;
+
+  // Elements
+  $base-unit: 0.2rem;
+  $standard-unit: $base-unit * 3; // typography, line-heights, etc.
+  $spacer: $base-unit * 20; // 4rem For use with layout, sections, etc.
+
+  // Branding
+  $logo-svg-encoded-inverse: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2ODYuMiA0NDAuNyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+ICA8cGF0aCBjbGFzcz0ibW91bnRhaW4tMSIgZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxMCIgc3Ryb2tlPSIjZmZmIiBkPSJNMzc0LjEgMjIyLjhsMTIxLjcgMjEwLjctMjQzLjQuMUg5bDEyMS43LTIxMC44TDI1Mi4zIDEyeiIvPiAgPHBhdGggY2xhc3M9Im1vdW50YWluLTIiIGZpbGw9Im5vbmUiIHN0cm9rZS13aWR0aD0iNiIgc3Ryb2tlPSIjZmZmIiBkPSJNNTY2LjMgMjIwLjdsMTIzLjUgMjEzLjctMjQ2LjEtLjQtMjQ2LS40IDEyMi42LTIxMy40TDQ0Mi44IDYuOXoiLz48L3N2Zz4=';
+
+  $logo-svg-encoded: 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB3aWR0aD0iMzNweCIgaGVpZ2h0PSIyMnB4IiB2aWV3Qm94PSIwIDAgMzMgMjIiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+ICAgICAgICA8dGl0bGU+TW91bnRhaW5Nb25kYXk8L3RpdGxlPiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoIEJldGEuPC9kZXNjPiAgICA8ZGVmcz48L2RlZnM+ICAgIDxnIGlkPSJTeW1ib2xzIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4gICAgICAgIDxnIGlkPSJNb3VudGFpbnMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIuMDAwMDAwLCAyLjAwMDAwMCkiIHN0cm9rZT0iIzUwNTA1MCI+ICAgICAgICAgICAgPGcgaWQ9Ik1vdW50YWluTW9uZGF5Ij4gICAgICAgICAgICAgICAgPHBvbHlnb24gaWQ9IlNoYXBlIiBzdHJva2Utd2lkdGg9IjIiIHBvaW50cz0iMTYuMDQxNDcyOCA5LjYzNTE1NDU2IDIxLjMxMTE2OTMgMTguNzU2OTkxNSAxMC43NzE3NzY0IDE4Ljc2MTMyMDggMC4yMzIzODMzODMgMTguNzYxMzIwOCA1LjUwMjA3OTg3IDkuNjM1MTU0NTYgMTAuNzY3NDQ2MyAwLjUwODk4ODM2OSI+PC9wb2x5Z29uPiAgICAgICAgICAgICAgICA8cG9seWdvbiBpZD0iU2hhcGUiIHBvaW50cz0iMjQuMzYzODY5NCA5LjU0NDIzOTI0IDI5LjcxMTUwNzIgMTguNzk1OTU1MiAxOS4wNTUyMDIzIDE4Ljc3ODYzOCA4LjQwMzIyNzQ4IDE4Ljc2MTMyMDggMTMuNzExODk0NiA5LjUyMjU5Mjc0IDE5LjAxNjIzMTcgMC4yODgxOTQwMjUiPjwvcG9seWdvbj4gICAgICAgICAgICA8L2c+ICAgICAgICA8L2c+ICAgIDwvZz48L3N2Zz4=';
+
+
+
+
+  // API
+  $twitter: #5dc5f7;
+  $instagram: #3f729d;
+  // $rdio:  #008fd6; // RIP
+  // $readmill: #81ce2c; // RIP
+  $pocket: #EF4056;

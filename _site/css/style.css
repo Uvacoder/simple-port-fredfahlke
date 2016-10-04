@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+
+/*
+  FOUNDATION
+*/
+
+::-moz-selection { background: #999; color: #fff; text-shadow: none; }
+::selection  { background: #999; color: #fff; text-shadow: none; }
+
+
+html {
+  font-family: 'Roboto', sans-serif;
+  font-weight:  100;
+  font-size: 62.5%; /* Base 10 for REM sizing */
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-backface-visibility: hidden;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-backface-visibility: hidden;
+}
+
+dl, menu, ol, ul {
+  margin: 0;
+  padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: black;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+
+
+
+/*
+  Page
+*/
+
+.page-container {
+  max-width: 1312px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#page-header {
+  padding: 5.5rem 1.5rem;
+  overflow: hidden;
+}
+#page-header h1 {
+  float: left;
+}
+#page-header nav {
+  float: right;
+}
+
+.text-small {
+  font-size: 1.4rem;
+}
+.text-normal {
+  font-size: 1.6rem;
+}
+.text-large {
+  font-size: 2.0rem;
+}
+.text-dark {
+ color: #1C1C1C;
+}
+.text-faded {
+  color: #ACACAC;
+}
+
+.projects {
+
+}
+.project-unit {
+  background: #ECECEC;
+  width: 100%;
+  min-height: 100px;
+  padding: 10rem 5rem;
+  text-align: center;
+  box-sizing: border-box;
+}
+@media min-width(768px) {
+  .projects {
+    overflow: hidden;
+  }
+  .project-unit {
+    width: calc(50% - 0.8rem);
+    margin-top: 0;
+    float: left;
+  }
+  .project-unit:nth-child(even) {
+    margin-left: 1.6rem;
+  }
+}
+.project-unit + .project-unit {
+  margin-top: 0.8rem;
+}
+.project-unit figcaption {
+  display: none;
+}
+@media min-width(768px) {
+  .project-unit figcaption {
+   display: block;
+   opacity: 0;
+  }
+  .project-unit a {
+
+  }
+  .project-unit a:hover figcaption{
+    opacity: 1;
+  }
+}
+
+footer {
+  /* padding-top: 5.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem; */
+}
+
+
+/*
+  This site uses Tachyons for all base layout styles.
+*/
