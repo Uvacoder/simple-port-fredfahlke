@@ -124,10 +124,11 @@ img {
 }
 
 /* about */
+.profile-photo-container {
+  max-height: 490px;
+  background-color: #ECECEC;
+}
 .profile-photo {
-  background-image: url('/img/portrait_2x.jpg');
-  background-size:  100%;
-  background-position: center top;
 }
 
 footer {
