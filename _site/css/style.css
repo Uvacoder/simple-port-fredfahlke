@@ -58,14 +58,13 @@ img {
 }
 
 #page-header {
-  padding: 5.5rem 1.5rem;
-  overflow: hidden;
+  /* padding: 5.5rem 1.5rem; */
 }
 #page-header h1 {
-  float: left;
+  /* float: left; */
 }
 #page-header nav {
-  float: right;
+  /* float: right; */
 }
 
 .text-small {
@@ -88,12 +87,12 @@ img {
 
 }
 .project-unit {
+  box-sizing: border-box;
+}
+.project-unit a {
   background: #ECECEC;
-  width: 100%;
-  min-height: 100px;
   padding: 10rem 5rem;
   text-align: center;
-  box-sizing: border-box;
 }
 @media min-width(768px) {
   .projects {
@@ -107,9 +106,6 @@ img {
   .project-unit:nth-child(even) {
     margin-left: 1.6rem;
   }
-}
-.project-unit + .project-unit {
-  margin-top: 0.8rem;
 }
 .project-unit figcaption {
   display: none;
@@ -125,6 +121,13 @@ img {
   .project-unit a:hover figcaption{
     opacity: 1;
   }
+}
+
+/* about */
+.profile-photo {
+  background-image: url('/img/portrait_2x.jpg');
+  background-size:  100%;
+  background-position: center top;
 }
 
 footer {
