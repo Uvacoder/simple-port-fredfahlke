@@ -29,7 +29,13 @@ dl, menu, ol, ul {
 }
 
 h1,h2,h3,h4,h5,h6 {
+  font-weight: 100;
+  line-height: 1.4;
   margin: 0;
+}
+
+p {
+  line-height: 1.4;
 }
 
 a {
@@ -130,6 +136,18 @@ img {
 }
 .profile-photo {
 }
+#contact {
+  font-size:  2rem;
+  line-height: 1.6;
+}
+.about h1 {
+  font-size:  3.2rem;
+}
+.about p {
+  font-size:  2rem;
+  color: #6C6C6C;
+}
+
 
 footer {
   /* padding-top: 5.5rem;
