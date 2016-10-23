@@ -47,9 +47,9 @@
 
 <body id="ff" class="home">
 
-  <div class="container page-container">
+  <div class="container page-container ph3 ph4-l">
 
-    <header id="page-header" role="banner" class="pv5 ph3 ph4-l cf">
+    <header id="page-header" role="banner" class="pv5 cf">
       <a href="/" title="Fred Fahlke" itemprop="url">
         <h1 class="fl">
           <svg id="fred" width="68" height="20" viewBox="0 0 68 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="a" d="M.085 0h67.331v19.91H.085z"/></defs><g fill="none" fill-rule="evenodd"><mask id="b" fill="#fff"><use xlink:href="#a"/></mask><path d="M50.554 19.91h7.036c6.032 0 9.826-3.892 9.826-9.954C67.416 3.892 63.622 0 57.59 0h-7.036v19.91zm4.117-3.665V3.632h2.757c3.795 0 5.869 2.431 5.869 6.324 0 3.858-2.074 6.29-5.87 6.29h-2.756zM33.836 0v19.91h13.52v-3.664h-9.434v-4.734h8.56V7.977h-8.56V3.632h9.435V0h-13.52zM19.975 3.535H23.8c2.076 0 3.147 1.103 3.147 2.789 0 1.653-1.071 2.756-3.147 2.756h-3.825V3.535zm2.173 8.95l4.928 7.425h4.669l-5.253-7.717c2.79-.681 4.54-2.692 4.54-5.87C31.032 2.238 28.243 0 24.06 0h-8.203v19.91h4.118v-7.426h2.173zM4.203 19.91v-7.62h8.462v-3.6H4.203V3.632h9.144V0H.085v19.91h4.118z" fill="#1C1C1C" mask="url(#b)" /></g></svg>
@@ -60,68 +60,42 @@
       </nav>
     </header>
 
-    <div id="main" class="container" role="main">
+    <div id="main" class="container mt5" role="main">
 
-      <ul class="projects list cf">
-        <li class="project-unit fl w-100 w-50-ns pr1-ns pr2-l pb2 pb3-l">
-          <a href="" class="db absolute--fill" title="Project Title" itemprop="url">
-            <img src="img/projects/drag-drop/title-image.jpg" alt="Project Title">
-            <figcaption>
-              Project Title
-              <span>Project Subtitle</span>
-            </figcaption>
-          </a>
-        </li>
-        <li class="project-unit fl w-100 w-50-ns pl1-ns pl2-l pb2 pb3-l">
-          <a href="" class="db absolute--fill" title="Project Title" itemprop="url">
-            <img src="img/projects/google-beyond/title-image.jpg" alt="Project Title">
-            <figcaption>
-              Project Title
-              <span>Project Subtitle</span>
-            </figcaption>
-          </a>
-        </li>
-        <li class="project-unit fl w-100 w-50-ns pr1-ns pr2-l pb2 pb3-l">
-          <a href="" class="db absolute--fill" title="Project Title" itemprop="url">
-            <img src="img/projects/google-beyond/title-image.jpg" alt="Project Title">
-            <figcaption>
-              Project Title
-              <span>Project Subtitle</span>
-            </figcaption>
-          </a>
-        </li>
+      <header class="mb5">
+        <h2 class="text-extra-large db mb2">Project Title</h2>
+        <h3 class="text-large db">Project Sub-Title</h3>
+      </header>
 
+      <div class="project-unit project-unit--video border-box mb6">
+        <iframe src="https://player.vimeo.com/video/181948179?color=808080&title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
 
-        <!-- THESE ARE ALL DUPLICATED - - DELETE ME -->
-        <li class="project-unit fl w-100 w-50-ns pl1-ns pl2-l pb2 pb3-l">
-          <a href="" class="db absolute--fill" title="Project Title" itemprop="url">
-            <img src="img/projects/linear/title-image.jpg" alt="Project Title">
-            <figcaption>
-              Project Title
-              <span>Project Subtitle</span>
-            </figcaption>
-          </a>
-        </li>
-        <li class="project-unit fl w-100 w-50-ns pr1-ns pr2-l pb2 pb3-l">
-          <a href="" class="db absolute--fill" title="Project Title" itemprop="url">
-            <img src="img/projects/drag-drop/title-image.jpg" alt="Project Title">
-            <figcaption>
-              Project Title
-              <span>Project Subtitle</span>
-            </figcaption>
-          </a>
-        </li>
-        <li class="project-unit fl w-100 w-50-ns pl1-ns pl2-l pb2 pb3-l">
-          <a href="" class="db absolute--fill" title="Project Title" itemprop="url">
-            <img src="img/projects/google-beyond/title-image.jpg" alt="Project Title">
-            <figcaption>
-              Project Title
-              <span>Project Subtitle</span>
-            </figcaption>
-          </a>
-        </li>
-        <!-- THESE ^^^^^ ARE ALL DUPLICATED - - DELETE ME -->
-      </u>
+      <div class="project-description w-50-ns mb5">
+        <p>loremCras sed ante. Phasellus in massa. Curabitur dolor eros, gravida et, hendrerit ac, cursus non, massa. Aliquam lorem. In hac habitasse platea dictumst. Cras eu mauris. Quisque lacus.</p>
+      </div>
+
+      <div class="project-unit border-box mb5">
+        <img src="img/projects/drag-drop/title-image.jpg" alt="A description of this image">
+      </div>
+
+      <div class="project-unit border-box mb5">
+        <img src="img/projects/drag-drop/title-image.jpg" alt="A description of this image">
+      </div>
+
+      <div class="project-unit border-box mb5 overflow-hidden">
+        <img class="fl w-50-ns pr1-m pr2-l" src="img/projects/drag-drop/title-image.jpg" alt="A description of this image">
+        <img class="fl w-50-ns pl1-m pl2-l" src="img/projects/drag-drop/title-image.jpg" alt="A description of this image">
+      </div>
+
+      <div class="project-unit border-box mb5">
+        <img src="img/projects/drag-drop/title-image.jpg" alt="A description of this image">
+      </div>
+
+      <div class="project-unit border-box mb5">
+        <img src="img/projects/drag-drop/title-image.jpg" alt="A description of this image">
+      </div>
+
     </div>
 
     <footer id="main-footer" role="contentinfo" class="pt5 pb5 ph3">
