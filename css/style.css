@@ -104,7 +104,7 @@ img {
   position: relative;
   height: 0;
   padding-top: 25px;
-  padding-bottom: 56.25%; /* Ratio is 16:9, (height/width)*100 */
+  padding-bottom: 54%;
 }
 .project-unit--video > iframe {
   position: absolute;
