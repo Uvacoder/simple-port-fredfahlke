@@ -53,6 +53,28 @@ img {
 }
 
 
+/* DARK MODE */
+body.dark {
+  background: #000;
+}
+
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark h4,
+body.dark h5,
+body.dark h6,
+body.dark p,
+body.dark a,
+body.dark .text-dark
+{
+  color: #fff;
+}
+
+body.dark a:hover {
+  color: #929292;
+}
+/* // END DARK MODE */
 
 
 
