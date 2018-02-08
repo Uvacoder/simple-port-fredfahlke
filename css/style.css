@@ -138,7 +138,7 @@ body.dark a:hover {
   height: 100%;
 }
 .project-unit a {
-  background: #ECECEC;
+  background: none;
   text-align: center;
 }
 .project-unit figcaption {
