@@ -41,8 +41,10 @@ p {
 }
 
 a {
-  text-decoration: none;
+  color: #909090;
+  text-decoration: none;  
 }
+
 a:hover {
   color: black;
 }
